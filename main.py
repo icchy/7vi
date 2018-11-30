@@ -30,6 +30,7 @@ def run():
 def edit(url):
     origpath = get_path(url, origdir)
     modpath = get_path(url, moddir)
+    editor = os.getenv('EDITOR', 'vim')
 
     cp_ts = None
     if not os.path.exists(modpath) and os.path.exists(origpath):
@@ -39,7 +40,7 @@ def edit(url):
         shutil.copyfile(origpath, modpath)
         cp_ts = get_ts(modpath)
 
-    ret = subprocess.call(['vim', modpath])
+    ret = subprocess.call([editor, modpath])
 
     # delete if no changes on copied file
     if cp_ts and cp_ts == get_ts(modpath):
