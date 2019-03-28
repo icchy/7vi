@@ -14,7 +14,7 @@ start 7vi to log all HTTP/HTTPS traffic
 
 access web page via proxy (localhost:8080 by default).
 ```
-~# curl -x localhost:8080 mitmproxy.org 
+~$ curl -x localhost:8080 mitmproxy.org 
 <html>
 <head><title>301 Moved Permanently</title></head>
 <body bgcolor="white">
@@ -39,7 +39,8 @@ edited by 7vi
 you can restore default contents from server by deleting file you are editing
 ```
 # execute `:!rm %` on vim
-curl -x localhost:8080 mitmproxy.org                               <html>       
+curl -x localhost:8080 mitmproxy.org
+<html>       
 <head><title>301 Moved Permanently</title></head>
 <body bgcolor="white">
 <center><h1>301 Moved Permanently</h1></center>
