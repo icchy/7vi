@@ -5,6 +5,12 @@
 * install [mitmproxy](https://mitmproxy.org/) with `pip install mitimproxy --user`
 * configure SSL settings if you will edit HTTPS resources
 
+## Installation
+```
+~$ git clone https://github.com/icchy/7vi /path/to/installed/7vi
+~$ export PATH="$PATH:/path/to/installed/7vi" >> .bashrc # or .zshrc something
+```
+
 ## Usage
 start 7vi to log all HTTP/HTTPS traffic
 ```
