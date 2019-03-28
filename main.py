@@ -1,4 +1,3 @@
-#!/home/icchy/.pyenv/versions/3.7.1/bin/python
 from mitmproxy.tools.main import mitmdump
 from lib import get_path, get_ts
 
