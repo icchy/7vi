@@ -3,7 +3,7 @@
 
 ## Prerequisites
 * install [mitmproxy](https://mitmproxy.org/) with `pip install mitimproxy --user`
-* configure SSL certificate if you will edit HTTPS resources
+* configure SSL settings if you will edit HTTPS resources
 
 ## Usage
 start 7vi to log all HTTP/HTTPS traffic
@@ -39,7 +39,7 @@ edited by 7vi
 you can restore default contents from server by deleting file you are editing
 ```
 # execute `:!rm %` on vim
-curl -x localhost:8080 mitmproxy.org
+~$ curl -x localhost:8080 mitmproxy.org
 <html>       
 <head><title>301 Moved Permanently</title></head>
 <body bgcolor="white">
