@@ -15,6 +15,7 @@
 start 7vi to log all HTTP/HTTPS traffic
 ```
 ~$ mkdir workdir
+~$ cd workdir
 ~$ 7vi # spawns mitmproxy, hit Ctrl-C when you want stop them
 ```
 
@@ -33,6 +34,7 @@ access web page via proxy (localhost:8080 by default).
 then launch another shell on same directory
 **NOTE: enter same URL appeared on mitmproxy's log**
 ```
+~$ cd workdir
 ~$ 7vi "http://mitmproxy.org/" # spawns editor you set on $EDITOR, or vim
 ```
 
